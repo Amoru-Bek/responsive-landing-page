@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.ncard{
+    display: flex;
+    background-color: white;
+    margin: 2rem auto;
+    flex-direction: column;
+    width: min(95%, 48rem);
+    max-width: 55rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+.ncard img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Fraunces{
+    font-family: 'Fraunces';
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.possition{
+    margin: 1rem 0;
+}
+.position{
+    padding: .8rem 2rem;
+}
+.sold-price{
+    color: rgb(0, 116, 0);
+}
+.body{
+    background-color: hsl(30, 38%, 92%);
+}
+.price{
+    margin-left: 1rem;
+    text-decoration: line-through;
+    font-size: .9rem;
+    opacity: 0.79;
+}
+.Montserrat{
+    font-family: 'Montserrat'; 
+    font-weight: 500,700;
+}
+.btn{
+    background-color: rgb(0, 116, 0);
+    border-color: rgb(0, 116, 0);
+    padding: 0.5rem 2.8rem;
+    width: 100%;
+    
+    border-radius: .6rem;
+    font-weight: 500;
+}
+@media(min-width: 768px){
+    .ncard{
+        flex-direction: row;
+        gap: 1.5rem;
+        width: min(85%,48.5rem);
+        margin-top: 2.4rem;
+    }
+    .card-img-wrapper{
+        flex: 1 1 40%;
+        aspect-ratio: 3 / 4;
+    }
+}
