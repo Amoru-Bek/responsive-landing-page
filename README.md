@@ -60,7 +60,9 @@ I've learned how to create a responsive landing page by using media queries and 
         <img src="./images/image-product-mobile.jpg" alt="perfum-image">
       </picture>
       </div>
-    </div>```
+    </div>
+```
+
 ```css
 @media(min-width: 768px){
     .ncard{
